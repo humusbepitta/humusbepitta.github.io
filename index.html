@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>רות מרגלית</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow-x: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #title, #main, .spacer {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+        #title {
+            height: 114px;
+            z-index: 2;
+            position: fixed;
+            top:0;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+
+        #main {
+            position: absolute;
+            top:0;
+            left: 50%;
+            transform: translate(-50%,0)
+        }
+
+        #spacer_bottom {
+            height: calc(100vh - 158px); /*px number should be the hefght of the title */
+            background-color: #000;
+            display: block;
+        }
+    </style>
+</head>
+<body onload="javascript:document.location='index.html#endOfPage';">
+    <div id="title">
+       
+        <img src="title.jpg">
+    </div>
+    <div id="main">
+        <img src="main.jpg">
+        <a name="endOfPage">
+            <div id="spacer_bottom"></div>
+        </a>
+    </div>
+</body>
+</html>
